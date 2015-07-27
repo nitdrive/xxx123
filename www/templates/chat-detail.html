@@ -1,0 +1,167 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{chat.name}}">
+  <ion-content class="padding">
+   
+      <div class="list card">
+      <div class="item item-divider">Profile 
+	<div style="float:right"><img ng-src="{{chat.rating}}" style="width:75px;height:15px"></div>
+      </div>
+       
+      <div class="item item-body">
+      
+           <div>
+		 <div class="user-profileImage">
+		 <img ng-src="{{chat.baseURL}}/fprofilePic.jpg" style="width: 128px; height: 128px">
+		 </div>
+		<div class="user-bio">
+			<div class="bio">
+			  <span class="bio-title">Name:</span> {{ chat.name }}
+			</div>
+			<div class="bio">
+			  <span class="bio-title">Semester Intended: </span> {{ chat.semester }}
+			</div>
+			<div class="bio">
+			  <span class="bio-title">Major Intended: </span> {{ chat.major }}
+			</div>
+			<div class="bio">
+			  <span class="bio-title">Undergraduate Major: </span> {{ chat.undergraduateMajor }}
+			</div>
+		</div>
+		
+           </div>
+	  
+      </div>
+  
+       <div class="item item-body">
+       <h2 class="title" style="font-weight:bold;">Application Materials</h2>
+            <div>
+		<div id="GRE" style="float:left;padding-right:50px;padding:10px;">
+		<div>
+		   <img ng-src="{{chat.baseURL}}/GRE.jpg" style="width: 128px; height: 128px">
+		</div>
+            
+		    <div>
+		        <a href="#/tab/chats/view/{{chat.id}}/GRE/image" alt="{{ chat.GRE }}">View GRE</a>
+		    </div>
+               </div>
+
+		<div id="TOEFL" style="float:left;padding-right:50px;padding:10px;">
+
+		    <div>
+			   <img ng-src="{{chat.baseURL}}/TOEFL.jpg" style="width: 160px; height: 128px">
+			</div>
+            
+		    <div>
+		        <a href="#/tab/chats/view/{{chat.id}}/TOEFL/image" alt="{{ chat.TOEFL }}">View TOEFL</a>
+		    </div>
+		</div>
+               <div id="SEM1" style="float:left;padding-right:50px;padding:10px;">
+
+		    <div>
+			   <img ng-src="{{chat.baseURL}}/SEM1.jpg" style="width: 160px; height: 128px">
+			</div>
+            
+		    <div>
+		        <a href="#/tab/chats/view/{{chat.id}}/SEM1/image" alt="{{ chat.TOEFL }}">View SEM1</a>
+		    </div>
+		</div>
+		<div id="SEM2" style="float:left;padding-right:50px;padding:10px;">
+
+		    <div>
+			   <img ng-src="{{chat.baseURL}}/SEM2.jpg" style="width: 160px; height: 128px">
+			</div>
+            
+		    <div>
+		        <a href="#/tab/chats/view/{{chat.id}}/SEM2/image" alt="{{ chat.TOEFL }}">View SEM2</a>
+		    </div>
+		</div>
+		<div id="SEM3" style="float:left;padding-right:50px;padding:10px;">
+
+		    <div>
+			   <img ng-src="{{chat.baseURL}}/SEM3.jpg" style="width: 160px; height: 128px">
+			</div>
+            
+		    <div>
+		        <a href="#/tab/chats/view/{{chat.id}}/SEM3/image" alt="{{ chat.TOEFL }}">View SEM3</a>
+		    </div>
+		</div>
+		<div id="SEM4" style="float:left;padding-right:50px;padding:10px;">
+
+		    <div>
+			   <img ng-src="{{chat.baseURL}}/SEM4.jpg" style="width: 160px; height: 128px">
+			</div>
+            
+		    <div>
+		        <a href="#/tab/chats/view/{{chat.id}}/SEM4/image" alt="{{ chat.TOEFL }}">View SEM4</a>
+		    </div>
+		</div>
+		<div id="SEM5" style="float:left;padding-right:50px;padding:10px;">
+
+		    <div>
+			   <img ng-src="{{chat.baseURL}}/SEM5.jpg" style="width: 160px; height: 128px">
+			</div>
+            
+		    <div>
+		        <a href="#/tab/chats/view/{{chat.id}}/SEM5/image" alt="{{ chat.TOEFL }}">View SEM5</a>
+		    </div>
+		</div>
+		<div id="SEM6" style="float:left;padding-right:50px;padding:10px;">
+
+		    <div>
+			   <img ng-src="{{chat.baseURL}}/SEM6.jpg" style="width: 160px; height: 128px">
+			</div>
+            
+		    <div>
+		        <a href="#/tab/chats/view/{{chat.id}}/SEM6/image" alt="{{ chat.TOEFL }}">View SEM6</a>
+		    </div>
+		</div>
+		<div id="SEM7" style="float:left;padding-right:50px;padding:10px;">
+
+		    <div>
+			   <img ng-src="{{chat.baseURL}}/SEM7.jpg" style="width: 160px; height: 128px">
+			</div>
+            
+		    <div>
+		        <a href="#/tab/chats/view/{{chat.id}}/SEM7/image" alt="{{ chat.TOEFL }}">View SEM7</a>
+		    </div>
+		</div>
+		<div id="SEM8" style="float:left;padding-right:50px;padding:10px;">
+
+		    <div>
+			   <img ng-src="{{chat.baseURL}}/SEM8.jpg" style="width: 160px; height: 128px">
+			</div>
+            
+		    <div>
+		        <a href="#/tab/chats/view/{{chat.id}}/SEM8/image" alt="{{ chat.TOEFL }}">View SEM8</a>
+		    </div>
+		</div>
+		<div id="CMM" style="float:left;padding-right:50px;padding:10px;">
+
+		    <div>
+			   <img ng-src="{{chat.baseURL}}/CMM.jpg" style="width: 160px; height: 128px">
+			</div>
+            
+		    <div>
+		        <a href="#/tab/chats/view/{{chat.id}}/CMM/image" alt="{{ chat.TOEFL }}">View CMM</a>
+		    </div>
+		</div>
+		
+          </div>
+             
+     </div>
+     <div class="list card">
+	      <div class="item item-body">
+		<button class="button button-block button-stable" ng-click="showPopup()">
+		    Forward Profile
+		</button>
+	      </div>
+    </div>
+   
+    
+  </ion-content>
+</ion-view>

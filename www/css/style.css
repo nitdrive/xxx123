@@ -1,0 +1,40 @@
+/* Empty. Add your own CSS if you like */
+
+.inner {
+    height: 5px;
+    background-color: #387ef5;
+}
+
+.outer {
+    border: 1px solid blue;
+}
+
+.user-profileImage {
+
+    float:left;
+    /*box-shadow:0 5px 5px rgba(0, 0, 0, 0.3);*/
+    border: 5px solid #f5f5f5;
+    /*margin-right: 2px;*/
+}
+
+.user-bio {
+    
+   float:left;
+   padding-left: 5px;
+   
+
+}
+
+.bio {
+    
+   
+   /*padding-left: 5px;*/
+   
+
+}
+
+.bio-title {
+
+  font-weight: bold;
+
+}

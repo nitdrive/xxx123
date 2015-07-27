@@ -1,0 +1,22 @@
+<ion-view view-title="Profiles">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+        <img ng-src="{{chat.face}}">
+        <h2>{{chat.name}}</h2>
+        <p> <img ng-src="{{chat.rating}}" style="width:75px;height:15px"></p>
+        <p> {{ chat.progress + '%'+ ' complete' }}<div class="outer">
+              <div class="inner" ng-style="{ width: chat.progress + '%' }"></div>
+            </div>
+        </p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+
+

@@ -1,0 +1,22 @@
+<ion-view view-title="File Viewer">
+  <ion-content>
+   <div class="list card">
+      
+      <div class="item item-divider">File</div>
+	
+      <div class="item item-body">
+   
+          <div ng-if="ftype==='image'">
+		 <img ng-src="http://192.168.0.100:3000/static/b859286ad04ff19c92f1d9a873bebf2c40dadbce/ben10/{{filename}}.jpg"  width="600" height="700" />
+	  </div>
+     
+          <div ng-if="ftype==='pdf'" style="overflow:scroll; -webkit-overflow-scrolling:touch;">
+		<div style="overflow:scroll; -webkit-overflow-scrolling:touch;">
+     				<!--<iframe src="http://192.168.0.100:3000/static/b859286ad04ff19c92f1d9a873bebf2c40dadbce/ben10/{{ filename }}.pdf" width="600" height="400"></iframe>-->
+                </div>
+	  </div>
+	
+      </div>
+   </div>
+  </ion-content>
+</ion-view>

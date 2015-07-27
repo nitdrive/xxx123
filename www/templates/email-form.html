@@ -1,0 +1,24 @@
+
+<form ng-controller="ChatDetailCtrl">
+
+			    <span class="input-label">To: </span>
+			    <input type="text" placeholder="John@xyz.com" ng-model="email.to">
+			 
+			  
+			    <span class="input-label">Subject: </span>
+			    <input type="text" placeholder="Write Subject" ng-model="email.subject"">
+			
+			 
+			    <span class="input-label">Content: </span>
+			    <textarea cols="5" rows="5" placeholder="Write what you want to send" ng-model="email.content"></textarea>
+
+			   
+			    <button class="button button-block button-stable" ng-click="sendEmail()">Send</button>
+			 
+			 
+			 
+			 
+</form>			  
+        
+      
+  
